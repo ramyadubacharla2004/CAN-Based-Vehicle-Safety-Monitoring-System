@@ -27,7 +27,6 @@ The system provides real-time monitoring and improves vehicle safety by detectin
 - HC-SR05 Ultrasonic Sensor
 - LEDs
 - Push Buttons
-- Buzzer
 - USB to UART Converter
 
 ## Software Used
