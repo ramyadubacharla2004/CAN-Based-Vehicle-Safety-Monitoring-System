@@ -618,27 +618,7 @@ void WriteByte(unsigned char Dout)
 }
 
 /**READING TEMPERATURE FROM DS18B20 USING 1-WIRE PROTOCOL**/
-/*int ReadTemp(void)
-{
-        unsigned char n,buff[2];
-        int temp;
-        ResetDS18b20();   //RESET DS18B20
-    WriteByte(0xcc);   // skip ROM
-    WriteByte(0x44);   // perform temperature conversion
-	//delay_ms(750);//required for 12 bits resolution
-    while (ReadByte()==0xff); // wait for conversion complete   
-        ResetDS18b20();
-        WriteByte(0xcc);   // skip ROM
-        WriteByte(0xbe);    // read the result
-    for (n=0; n<2; n++) // read 9 bytes but, use only one byte
-    {
-       buff[n]=ReadByte();  // read DS1820
-    }
-        temp=buff[1];
-        temp=temp<<8;
-        temp=temp|buff[0];
-        return(temp);
-} */
+
 int ReadTemp(void)
 
 {
@@ -854,39 +834,7 @@ int main()
             LINE2 : INDICATOR STATUS
         ****************************************/
 
-      /*  blink=!blink;
-
-        CmdLCD(0xc0);
-
-        if(indicator_cmd=='L')
-        {
-            if(blink)
-                CharLCD(0);
-            else
-                CharLCD(' ');
-
-            StrLCD(" LEFT IND     ");
-        }
-
-        else if(indicator_cmd=='R')
-        {
-            if(blink)
-                CharLCD(1);
-            else
-                CharLCD(' ');
-
-            StrLCD(" RIGHT IND    ");
-        }
-
-        else
-        {
-            CharLCD(0);
-
-            CharLCD(1);
-
-            StrLCD(" IND OFF      ");
-        }*/
-		 blink=!blink;
+    	 blink=!blink;
 
         CmdLCD(0xc0);
 		StrLCD("             ");
@@ -1001,18 +949,7 @@ int main()
 
             StrLCD("cm ");
 
-            /*if(reverse_alert)
-            {
-                StrLCD("ALERT ");
-
-                Buzzer_ON();
-            }
-            else
-            {
-                StrLCD("SAFE  ");
-
-                Buzzer_OFF();
-            } */
+          
 			if(dist<20)
 			{
 			StrLCD("ALERT   ");
