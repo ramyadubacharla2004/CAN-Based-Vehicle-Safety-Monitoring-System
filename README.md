@@ -44,3 +44,23 @@ The system provides real-time monitoring and improves vehicle safety by detectin
 - Left and Right Indicator Control
 - LCD Status Display
 - Real-Time Vehicle Safety Monitoring
+
+## Advantages
+
+- Reliable real-time communication.
+- Reduced wiring using the CAN bus.
+- Improved vehicle safety.
+- Easy to expand with additional sensors and modules.
+- Modular and efficient system design.
+  
+## Future Scope
+
+- GPS and GSM integration.
+- IoT-based vehicle monitoring.
+- Mobile application support.
+- Tire pressure and fuel level monitoring.
+- CAN FD implementation for higher-speed communication.
+
+  ## Conclusion
+
+  This project demonstrates how the CAN protocol enables reliable communication between multiple vehicle modules. It improves vehicle safety through engine temperature monitoring, reverse obstacle detection, and indicator control, while providing a scalable foundation for future automotive applications.
