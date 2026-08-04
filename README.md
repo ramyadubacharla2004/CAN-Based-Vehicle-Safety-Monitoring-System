@@ -92,7 +92,7 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 * Provides reliable communication between all three nodes using the MCP2551 CAN transceiver.
 * Uses **CANH** and **CANL** lines with **120 Ω termination resistors** at both ends for stable communication.
 
-⚙️ Hardware Requirements
+**⚙️ Hardware Requirements**
 | Hardware                     | Quantity | Purpose                                       |
 | ---------------------------- | -------- | --------------------------------------------- |
 | LPC2129 ARM7 Microcontroller | 3        | Main Node, Indicator Node, Reverse Alert Node |
@@ -107,7 +107,7 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 | CAN Bus                      | 1        | Communication Between Nodes                   |
 | Power Supply (5V)            | 1        | System Power Supply                           |
 
-💻 Software Requirements
+**💻 Software Requirements**
 | Software     | Purpose                |
 | ------------ | ---------------------- |
 | Keil µVision | Embedded C Development |
@@ -115,7 +115,7 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 | Flash Magic  | Programming LPC2129    |
 | Proteus      | Circuit Simulation     |
 
-📂 Repository Structure
+**📂 Repository Structure**
 CAN-BASED-VEHICLE-SAFETY-AND-MONITORING-SYSTEM
 │
 ├── 📁 Documentation
@@ -168,7 +168,7 @@ CAN-BASED-VEHICLE-SAFETY-AND-MONITORING-SYSTEM
 ├── README.md
 └── LICENSE
 
-🚀 Features
+**🚀 Features**
 Real-time engine temperature monitoring using the DS18B20 sensor.
 Reverse obstacle detection using the HC-SR05 ultrasonic sensor.
 CAN Bus communication between three LPC2129 nodes.
@@ -193,14 +193,14 @@ Distance = 999 cm (No Obstacle Detected)
 
 (Add your LCD output images here.)
 
-▶️ Build Instructions
+**▶️ Build Instructions**
 Open the project in Keil µVision.
 Build the project to generate the HEX file.
 Program the LPC2129 boards using Flash Magic.
 Connect all three nodes using the CAN Bus (MCP2551).
 Power ON the system.
 Observe the LCD for engine temperature, vehicle mode, indicator status, and reverse obstacle detection.
-📈 Future Enhancements
+**📈 Future Enhancements**
 Add GPS-based vehicle tracking.
 Integrate GSM for emergency alert messages.
 Develop an IoT-based remote vehicle monitoring system.
