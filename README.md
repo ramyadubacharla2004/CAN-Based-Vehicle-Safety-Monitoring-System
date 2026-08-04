@@ -93,6 +93,7 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 * Uses **CANH** and **CANL** lines with **120 Ω termination resistors** at both ends for stable communication.
 
 **⚙️ Hardware Requirements**
+
 | Hardware                     | Quantity | Purpose                                       |
 | ---------------------------- | -------- | --------------------------------------------- |
 | LPC2129 ARM7 Microcontroller | 3        | Main Node, Indicator Node, Reverse Alert Node |
@@ -108,6 +109,7 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 | Power Supply (5V)            | 1        | System Power Supply                           |
 
 **💻 Software Requirements**
+
 | Software     | Purpose                |
 | ------------ | ---------------------- |
 | Keil µVision | Embedded C Development |
@@ -115,7 +117,9 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 | Flash Magic  | Programming LPC2129    |
 | Proteus      | Circuit Simulation     |
 
-**📂 Repository Structure**
+## 📂 Repository Structure
+
+```text
 CAN-BASED-VEHICLE-SAFETY-AND-MONITORING-SYSTEM
 │
 ├── 📁 Documentation
@@ -167,51 +171,57 @@ CAN-BASED-VEHICLE-SAFETY-AND-MONITORING-SYSTEM
 │
 ├── README.md
 └── LICENSE
+```
+## 🚀 Features
 
-**🚀 Features**
-Real-time engine temperature monitoring using the DS18B20 sensor.
-Reverse obstacle detection using the HC-SR05 ultrasonic sensor.
-CAN Bus communication between three LPC2129 nodes.
-Left and Right indicator control through CAN messages.
-Real-time display of engine temperature, vehicle mode, and obstacle status on the 16×2 LCD.
-Warning LED activation when an obstacle is detected within 20 cm.
-Reliable and high-speed communication using the MCP2551 CAN transceiver.
-Modular design with separate Main, Indicator, and Reverse Alert Nodes.
-Developed using Embedded C on the ARM7 LPC2129 microcontroller.
-🖥️ LCD Output Gallery
+- Real-time engine temperature monitoring using the **DS18B20** sensor.
+- Reverse obstacle detection using the **HC-SR05** ultrasonic sensor.
+- CAN Bus communication between three **LPC2129** nodes.
+- Left and Right indicator control through CAN messages.
+- Real-time display of engine temperature, vehicle mode, and obstacle status on the **16×2 LCD**.
+- Warning LED activation when an obstacle is detected within **20 cm**.
+- Reliable and high-speed communication using the **MCP2551 CAN transceiver**.
+- Modular design with separate **Main Node**, **Indicator Node**, and **Reverse Alert Node**.
+- Developed using **Embedded C** on the **ARM7 LPC2129** microcontroller.
+
+- ## 🖥️ LCD Output Gallery
 
 The system successfully displays real-time vehicle information and safety alerts received through CAN Bus communication.
 
-Engine Temperature Display
-Forward Mode
-Reverse Mode
-Left Indicator ON
-Right Indicator ON
-SAFE Status
-ALERT Status
-Distance = 999 cm (No Obstacle Detected)
+- Engine Temperature Display
+- Forward Mode
+- Reverse Mode
+- Left Indicator ON
+- Right Indicator ON
+- SAFE Status
+- ALERT Status
+- Distance = **999 cm** (No Obstacle Detected)
 
-(Add your LCD output images here.)
+> *(Add your LCD output images here.)*
+>
+> ## ▶️ Build Instructions
 
-**▶️ Build Instructions**
-Open the project in Keil µVision.
-Build the project to generate the HEX file.
-Program the LPC2129 boards using Flash Magic.
-Connect all three nodes using the CAN Bus (MCP2551).
-Power ON the system.
-Observe the LCD for engine temperature, vehicle mode, indicator status, and reverse obstacle detection.
-**📈 Future Enhancements**
-Add GPS-based vehicle tracking.
-Integrate GSM for emergency alert messages.
-Develop an IoT-based remote vehicle monitoring system.
-Display additional vehicle parameters such as speed and battery status.
-Upgrade to CAN FD for higher data transfer rates.
-Integrate a rear-view camera with obstacle detection.
-Develop a mobile application for live vehicle monitoring.
-👩‍💻 Author
+1. Open the project in **Keil µVision**.
+2. Build the project to generate the HEX file.
+3. Program the LPC2129 boards using **Flash Magic**.
+4. Connect all three nodes using the **CAN Bus (MCP2551)**.
+5. Power ON the system.
+6. Observe the LCD for engine temperature, vehicle mode, indicator status, and reverse obstacle detection.
 
-Ramya Dubacharla
+7. ## 📈 Future Enhancements
 
-Bachelor of Technology (Electronics and Communication Engineering)
+- Add GPS-based vehicle tracking.
+- Integrate GSM for emergency alert messages.
+- Develop an IoT-based remote vehicle monitoring system.
+- Display additional vehicle parameters such as speed and battery status.
+- Upgrade to CAN FD for higher data transfer rates.
+- Integrate a rear-view camera with obstacle detection.
+- Develop a mobile application for live vehicle monitoring.
 
-Skills: Embedded C | ARM7 LPC2129 | CAN | UART | SPI | I2C | Embedded Systems
+- ## 👩‍💻 Author
+
+**Ramya Dubacharla**
+
+**Bachelor of Technology (Electronics and Communication Engineering)**
+
+**Skills:** Embedded C | ARM7 LPC2129 | CAN | UART | SPI | I2C | Embedded Systems
