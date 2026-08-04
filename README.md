@@ -198,7 +198,8 @@ The system successfully displays real-time vehicle information and safety alerts
 - ALERT Status
 - Distance = **999 cm** (No Obstacle Detected)
 
-> *(Add your LCD output images here.)*
+> <img width="520" height="287" alt="image" src="https://github.com/user-attachments/assets/a93d107c-b2c6-424f-8138-825e8adffd8a" />
+
 >
 > ## ▶️ Build Instructions
 
@@ -223,6 +224,4 @@ The system successfully displays real-time vehicle information and safety alerts
 
 **Ramya Dubacharla**
 
-**Bachelor of Technology (Electronics and Communication Engineering)**
-
-**Skills:** Embedded C | ARM7 LPC2129 | CAN | UART | SPI | I2C | Embedded Systems
+Embedded system |Embedded C | ARM7 |LPC2129 | CAN 
