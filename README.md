@@ -56,7 +56,8 @@ The system is implemented using **three independent CAN nodes** that communicate
 
 ## 🖼️ Block Diagram
 
-*(Insert your project block diagram image here.)*
+<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/9b56313f-4075-443e-9b60-30edc9740b1f" />
+
 
 ---
 
