@@ -101,7 +101,7 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 | MCP2551 CAN Transceiver      | 3        | CAN Communication                             |
 | DS18B20 Temperature Sensor   | 1        | Engine Temperature Monitoring                 |
 | HC-SR05 Ultrasonic Sensor    | 1        | Reverse Obstacle Detection                    |
-| 16×2 LCD Display             | 1        | Display Temperature and System Status         |
+| 20x4 LCD Display             | 1        | Display Temperature and System Status         |
 | LEDs                         | 8        | Left and Right Indicator Control              |
 | Warning LED                  | 1        | Obstacle Alert Indication                     |
 | Push Buttons                 | 3        | Left, Right and Mode Switch                   |
