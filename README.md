@@ -122,34 +122,29 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 
 ```text
 CAN-BASED-VEHICLE-SAFETY-AND-MONITORING-SYSTEM
-│
-├── 📁 Documentation
 │   ├── 📁 Images
-│   │   ├── Block_Diagram.png
-│   │   ├── Hardware_Setup.jpg
-│   │   ├── LCD_Output_1.jpg
-│   │   ├── LCD_Output_2.jpg
-│   │   └── LCD_Output_3.jpg
-│   └── CAN-Based Vehicle Safety and Monitoring System.pdf
+│   │   ├── Main_Node.jpg
+│   │   ├── Indicator_Node.jpg
+│   │   ├── Reverse_Node.jpg
+│   │   └── ALL_Nodes.jpg
 │
 ├── 📁 Main Node
-│   ├── can.c
-│   ├── can.h
-│   ├── can_defines.h
-│   ├── delay.c
-│   ├── delay.h
-│   ├── ds18b20.c
-│   ├── ds18b20.h
-│   ├── lcd.c
-│   ├── lcd.h
+│   ├── can_major.c
+│   ├── can_major.h
+│   ├── can_defines_major.h
+│   ├── delay_major.c
+│   ├── delay_major.h
+│   ├── ds18b20_major.c
+│   ├── ds18b20_major.h
+│   ├── major_lcd.c
+│   ├── major_lcd.h
 │   ├── interrupt.c
-│   ├── interrupt.h
 │   ├── main_node.c
-│   ├── headers.h
 │   ├── defines.h
-│   ├── pin_function_defines.h
-│   └── major_types.h
-│
+│   ├── major_lcd_defines.h
+│   └── major_type.h
+│   |__ buzzer_major.c
+
 ├── 📁 Indicator Node
 │   ├── can_major.c
 │   ├── can_major.h
@@ -157,18 +152,17 @@ CAN-BASED-VEHICLE-SAFETY-AND-MONITORING-SYSTEM
 │   ├── delay_major.c
 │   ├── delay_major.h
 │   ├── indicator_node.c
-│   └── major_types.h
+│   └── major_type.h
 │
 ├── 📁 Reverse Alert Node
-│   ├── can.c
-│   ├── can.h
-│   ├── can_defines.h
+│   ├── can_major.c
+│   ├── can_major.h
+│   ├── can_defines_major.h
 │   ├── ultrasonic.c
-│   ├── ultrasonic.h
-│   ├── delay.c
-│   ├── delay.h
+│   ├── delay_major.c
+│   ├── delay_major.h
 │   ├── reverse_node.c
-│   └── major_types.h
+│   └── major_type.h
 │
 ├── README.md
 └── LICENSE
