@@ -173,7 +173,7 @@ CAN-BASED-VEHICLE-SAFETY-AND-MONITORING-SYSTEM
 - Reverse obstacle detection using the **HC-SR05** ultrasonic sensor.
 - CAN Bus communication between three **LPC2129** nodes.
 - Left and Right indicator control through CAN messages.
-- Real-time display of engine temperature, vehicle mode, and obstacle status on the **16×2 LCD**.
+- Real-time display of engine temperature, vehicle mode, and obstacle status on the **20x4 LCD**.
 - Warning LED activation when an obstacle is detected within **20 cm**.
 - Reliable and high-speed communication using the **MCP2551 CAN transceiver**.
 - Modular design with separate **Main Node**, **Indicator Node**, and **Reverse Alert Node**.
