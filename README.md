@@ -34,7 +34,7 @@ The **CAN-Based Vehicle Safety and Monitoring System** is an Embedded Systems ap
 
 The system is implemented using **three independent CAN nodes** that communicate with each other over the CAN Bus:
 
-* **Main Node** – Reads engine temperature from the **DS18B20** sensor, displays system information on the **16×2 LCD**, detects Left/Right indicator switch presses, changes vehicle mode (Forward/Reverse), sends indicator commands to the Indicator Node, and receives obstacle information from the Reverse Alert Node.
+* **Main Node** – Reads engine temperature from the **DS18B20** sensor, displays system information on the **20x4 LCD**, detects Left/Right indicator switch presses, changes vehicle mode (Forward/Reverse), sends indicator commands to the Indicator Node, and receives obstacle information from the Reverse Alert Node.
 
 * **Indicator Node** – Receives CAN messages from the Main Node and controls the Left and Right indicator LEDs.
 
