@@ -1,4 +1,4 @@
-# 🚗 CAN-BASED VEHICLE SAFETY AND MONITORING SYSTEM
+/..# 🚗 CAN-BASED VEHICLE SAFETY AND MONITORING SYSTEM
 
 ## 📖 Table of Contents
 
@@ -97,8 +97,7 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 
 | Hardware                     | Quantity | Purpose                                       |
 | ---------------------------- | -------- | --------------------------------------------- |
-| LPC2129 ARM7 Microcontroller | 3        | Main Node, Indicator Node, Reverse Alert Node |
-| MCP2551 CAN Transceiver      | 3        | CAN Communication                             |
+| LPC2129 ARM7 Microcontroller | 3        | Main Node, Indicator Node, Reverse Alert Node |                           |
 | DS18B20 Temperature Sensor   | 1        | Engine Temperature Monitoring                 |
 | HC-SR05 Ultrasonic Sensor    | 1        | Reverse Obstacle Detection                    |
 | 20x4 LCD Display             | 1        | Display Temperature and System Status         |
@@ -175,7 +174,7 @@ CAN-BASED-VEHICLE-SAFETY-AND-MONITORING-SYSTEM
 - Left and Right indicator control through CAN messages.
 - Real-time display of engine temperature, vehicle mode, and obstacle status on the **20x4 LCD**.
 - Warning LED activation when an obstacle is detected within **20 cm**.
-- Reliable and high-speed communication using the **MCP2551 CAN transceiver**.
+- Reliable and real-time communication between all three nodes using the  **CAN Bus**.
 - Modular design with separate **Main Node**, **Indicator Node**, and **Reverse Alert Node**.
 - Developed using **Embedded C** on the **ARM7 LPC2129** microcontroller.
 
@@ -200,7 +199,7 @@ The system successfully displays real-time vehicle information and safety alerts
 1. Open the project in **Keil µVision**.
 2. Build the project to generate the HEX file.
 3. Program the LPC2129 boards using **Flash Magic**.
-4. Connect all three nodes using the **CAN Bus (MCP2551)**.
+4. Connect all three nodes using the **CAN Bus**.
 5. Power ON the system.
 6. Observe the LCD for engine temperature, vehicle mode, indicator status, and reverse obstacle detection.
 
