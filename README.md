@@ -104,7 +104,7 @@ The system is designed using **three LPC2129-based nodes** connected through a C
 | 20x4 LCD Display             | 1        | Display Temperature and System Status         |
 | LEDs                         | 8        | Left and Right Indicator Control              |
 | Warning LED                  | 1        | Obstacle Alert Indication                     |
-| Push Buttons                 | 3        | Left, Right and Mode Switch                   |
+| Switches                | 3        | Left, Right and Mode Switch                   |
 | USB to UART Converter        | 1        | Program Download and Serial Communication     |
 | CAN Bus                      | 1        | Communication Between Nodes                   |
 | Power Supply (5V)            | 1        | System Power Supply                           |
